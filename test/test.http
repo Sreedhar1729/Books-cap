@@ -1,9 +1,9 @@
 ### reading data
-GET http://localhost:4004/BooksSRV/Books?$expand=author HTTP/1.1
+GET http://localhost:4004/BooksSRV/Books?$expand=author,address HTTP/1.1
 
 ### reading authors data
 
-GET http://localhost:4004/BooksSRV/Authors HTTP/1.1
+GET http://localhost:4004/BooksSRV/Address HTTP/1.1
 
 ### creating author
 
@@ -30,6 +30,9 @@ Content-Type: application/json
       "phone": "9901706243",
       "author_ID": "9a9349f3-efe4-11ee-96b0-0800200c9a66"
 }
+
+### deleting books
+ DELETE http://localhost:4004/BooksSRV/Books/9a9349f1-efe4-11ee-96b0-0800200c9a66 HTTP/1.1
 
 
  
