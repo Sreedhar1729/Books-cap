@@ -10,6 +10,7 @@ entity Books : cuid {
     descr  : String;
     amount:types.Amount;
     email:types.Email;
+    reldate:Date;
     phone:types.PhoneNumber;
     author : Composition of  Authors;
     address:Composition of    many Address on address.book=$self;

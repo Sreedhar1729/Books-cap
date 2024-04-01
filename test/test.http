@@ -1,9 +1,15 @@
 ### reading data
 GET http://localhost:4004/BooksSRV/Books?$expand=author,address HTTP/1.1
+### reading data
+
+GET http://localhost:4004/v2/BooksSRV/Books?$expand=author,address HTTP/1.1
 
 ### reading authors data
 
 GET http://localhost:4004/BooksSRV/Address HTTP/1.1
+### reading authors
+
+GET http://localhost:4004/BooksSRV/Authors HTTP/1.1
 
 ### creating author
 
