@@ -1,26 +1,26 @@
 ### reading data
-GET http://localhost:4004/BooksSRV/Books?$expand=author,address HTTP/1.1
+GET   http://localhost:4004/BooksSRV/Books?$expand=address HTTP/1.1
 ### reading books
 
-GET http://localhost:4004/BooksSRV/Books HTTP/1.1
+GET http://localhost:4004/BooksSRV/Books/9a9349f0-efe4-11ee-96b0-0800200c9a66 HTTP/1.1
 
 ### creating books
 POST http://localhost:4004/BooksSRV/Books HTTP/1.1
 Content-Type: application/json
 
  {
-      "ID": "9a9349f2-efe4-11ee-96b0-0800200c9a66",
-      "title": "ewm",
-      "descr": "ewm programming language",
-      "amount": 900,
-      "email": "uju@gmail.com",
+      "ID": "9a9349f3-efe4-11ee-96b0-0800200c9a66",
+      "title": "C programming",
+      "descr": "C language",
+      "amount": 700,
+      "email": "kalyan@gmail.com",
       "reldate": "2022-09-01",
-      "phone": "9301706243",
-      "author_ID": "9a9349f2-efe4-11ee-96b0-0800200c9a66"
+      "phone": "9001706243",
+      "author_ID": "9a9349f4-efe4-11ee-96b0-0800200c9a66"
     }
 ### reading data
 
-GET http://localhost:4004/v2/BooksSRV/Books?$expand=author,address HTTP/1.1
+GET http://localhost:4004/BooksSRV/Books?$expand=author,address HTTP/1.1
 
 ### reading address data
 
@@ -31,13 +31,13 @@ POST  http://localhost:4004/BooksSRV/Address HTTP/1.1
 Content-Type: application/json
 
 {
-"ID": "9a9349f1-efe5-11ee-96b0-0800200c9a66",
+"ID": "9a9349f3-efe5-11ee-96b0-0800200c9a66",
       "city": "Nellore",
-      "address": "kavali",
+      "address": "Bitragunta",
       "pincode": 51002,
       "street": "vaikuntapuram",
       "landmark": "water tank",
-      "book_ID": "9a9349f0-efe4-11ee-96b0-0800200c9a66"
+      "book_ID": "9a9349f4-efe4-11ee-96b0-0800200c9a66"
 }
 ### reading authors
 
@@ -50,8 +50,8 @@ Content-Type: application/json
 
 
 {
-    "ID": "9a9349f3-efe4-11ee-96b0-0800200c9a66",
-      "name": "ujwala"
+    "ID": "9a9349f4-efe4-11ee-96b0-0800200c9a66",
+      "name": "kalyani"
 }
 
 ### creating books

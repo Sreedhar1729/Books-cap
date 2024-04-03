@@ -8,22 +8,3 @@ service BooksService {
     entity Address as projection on db.Address;
 }
 
-
-annotate BooksService.Authors with @(Capabilities: {
-    InsertRestrictions: {
-        $Type     : 'Capabilities.InsertRestrictionsType',
-        Insertable: false
-    },
-    UpdateRestrictions: {
-        $Type    : 'Capabilities.UpdateRestrictionsType',
-        Updatable: false
-    },
-    DeleteRestrictions: {
-        $Type    : 'Capabilities.DeleteRestrictionsType',
-        Deletable: false
-    },
-    ReadRestrictions  : {
-        $Type   : 'Capabilities.ReadRestrictionsType',
-        Readable: true
-    },
-});
