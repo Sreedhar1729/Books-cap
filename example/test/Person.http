@@ -1,0 +1,6 @@
+### read 
+GET  http://localhost:4004/PersonSRV/Person HTTP/1.1
+
+### read both data
+
+GET  http://localhost:4004/PersonSRV/Person?$expand=address HTTP/1.1
